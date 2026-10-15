@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  /* Light mode - blue (#32adfe) and white */
+  --color-bg: #f5f5f5;
+  --color-bg-surface: #FFFFFF;
+  --color-bg-elevated: #FAFAFA;
+  --color-text-primary: #1E3A5F;
+  --color-text-secondary: #4A6B8A;
+  --color-text-muted: #8BA3BA;
+  --color-border: #D0DDE8;
+  --color-border-strong: #B0C4D8;
+  --color-accent: #32adfe;
+  --color-accent-hover: #1a9ae8;
+  --color-evidence-a: #059669;
+  --color-evidence-a-bg: #D1FAE5;
+  --color-evidence-b: #D97706;
+  --color-evidence-b-bg: #FEF3C7;
+  --color-evidence-c: #64748B;
+  --color-evidence-c-bg: #F1F5F9;
+  --color-shadow: rgba(50, 173, 254, 0.08);
+  --color-shadow-lg: rgba(50, 173, 254, 0.12);
+}
+
+.dark {
+  /* Dark mode - black, white, and blue (#30aefc) */
+  --color-bg: #0A0A0A;
+  --color-bg-surface: #1A1A1A;
+  --color-bg-elevated: #2A2A2A;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #E5E5E5;
+  --color-text-muted: #9CA3AF;
+  --color-border: #2A2A2A;
+  --color-border-strong: #3A3A3A;
+  --color-accent: #30aefc;
+  --color-accent-hover: #4db8ff;
+  --color-evidence-a: #10B981;
+  --color-evidence-a-bg: #064E3B;
+  --color-evidence-b: #F59E0B;
+  --color-evidence-b-bg: #78350F;
+  --color-evidence-c: #9CA3AF;
+  --color-evidence-c-bg: #1F2937;
+  --color-shadow: rgba(0, 0, 0, 0.5);
+  --color-shadow-lg: rgba(0, 0, 0, 0.7);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Serif SC', 'Source Han Serif SC', 'STSong', 'SimSun', serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-strong);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

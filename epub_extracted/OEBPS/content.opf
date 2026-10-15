@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="pub-id" xml:lang="zh-CN">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+<dc:identifier id="pub-id">urn:uuid:5c0c1c0e-6a5c-4d2b-9b1e-7d1f0a4e8c31</dc:identifier>
+<dc:title>高性价比人生指南</dc:title>
+<dc:language>zh-CN</dc:language>
+<dc:creator>eternity4719</dc:creator>
+<dc:description>讲怎么活得久、怎么少生病，出了意外怎么救。讲怎么少花冤枉钱，哪些事会让人被骗、摊上官司。讲没工作没钱时能去领什么，开店、开公司、做网站要办什么手续。也讲恋爱结婚生孩子、出国和学手艺。法律、医保、社保这些制度上的内容，按中国大陆的现行规定写。765 条建议，每条写明花掉什么、换回什么、证据有多硬，来源只引期刊论文和官方文件，少数官方不公开的案件引署名的原创新闻报道并附网页存档。不用全做：这是一份备选单，不是任务清单——挑走一两条就算数，作者自己也没做到其中大部分。书里的内容可能过时，也可能有错。不少政策各地执行不一样。真去办事、看病、打官司时，以当地部门、医生和律师的说法为准。发现写错了，欢迎[提 issue](https://github.com/eternity4719/HowToLiveBetter/issues)。**本项目从未发行、也不会发行任何代币或数字资产。** 用本项目名字发的币都和本项目无关，作者不领取、不认领任何相关收益。看到这类币请当作骗局，别买，见[第 5 节第 45 条（别买虚拟货币）](book/05-不要浪费钱.md)。</dc:description>
+<dc:source>https://github.com/eternity4719/HowToLiveBetter</dc:source>
+<dc:rights>CC BY 4.0（https://creativecommons.org/licenses/by/4.0/）</dc:rights>
+<dc:date>2026-10-15</dc:date>
+<meta property="dcterms:modified">2026-10-15T05:54:12Z</meta>
+<meta name="cover" content="cover-img"/>
+</metadata>
+<manifest>
+<item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+<item id="css" href="style.css" media-type="text/css"/>
+<item id="cover-img" href="cover.png" media-type="image/png" properties="cover-image"/>
+<item id="cover" href="cover.xhtml" media-type="application/xhtml+xml"/>
+<item id="front" href="front.xhtml" media-type="application/xhtml+xml"/>
+<item id="contents" href="contents.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch01" href="ch01.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch02" href="ch02.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch03" href="ch03.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch04" href="ch04.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch05" href="ch05.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch06" href="ch06.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch07" href="ch07.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch08" href="ch08.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch09" href="ch09.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch10" href="ch10.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch11" href="ch11.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch12" href="ch12.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch13" href="ch13.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch14" href="ch14.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch15" href="ch15.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch16" href="ch16.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch17" href="ch17.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch18" href="ch18.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch19" href="ch19.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch20" href="ch20.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch21" href="ch21.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch22" href="ch22.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch23" href="ch23.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch24" href="ch24.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch25" href="ch25.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch26" href="ch26.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch27" href="ch27.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch28" href="ch28.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch29" href="ch29.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch30" href="ch30.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch31" href="ch31.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch32" href="ch32.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch33" href="ch33.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch34" href="ch34.xhtml" media-type="application/xhtml+xml"/>
+<item id="doc1" href="doc1.xhtml" media-type="application/xhtml+xml"/>
+<item id="doc2" href="doc2.xhtml" media-type="application/xhtml+xml"/>
+<item id="doc3" href="doc3.xhtml" media-type="application/xhtml+xml"/>
+<item id="doc4" href="doc4.xhtml" media-type="application/xhtml+xml"/>
+<item id="doc5" href="doc5.xhtml" media-type="application/xhtml+xml"/>
+<item id="doc6" href="doc6.xhtml" media-type="application/xhtml+xml"/>
+<item id="doc7" href="doc7.xhtml" media-type="application/xhtml+xml"/>
+<item id="doc8" href="doc8.xhtml" media-type="application/xhtml+xml"/>
+<item id="doc9" href="doc9.xhtml" media-type="application/xhtml+xml"/>
+<item id="about" href="about.xhtml" media-type="application/xhtml+xml"/>
+</manifest>
+<spine toc="ncx">
+<itemref idref="cover"/>
+<itemref idref="front"/>
+<itemref idref="contents"/>
+<itemref idref="ch01"/>
+<itemref idref="ch02"/>
+<itemref idref="ch03"/>
+<itemref idref="ch04"/>
+<itemref idref="ch05"/>
+<itemref idref="ch06"/>
+<itemref idref="ch07"/>
+<itemref idref="ch08"/>
+<itemref idref="ch09"/>
+<itemref idref="ch10"/>
+<itemref idref="ch11"/>
+<itemref idref="ch12"/>
+<itemref idref="ch13"/>
+<itemref idref="ch14"/>
+<itemref idref="ch15"/>
+<itemref idref="ch16"/>
+<itemref idref="ch17"/>
+<itemref idref="ch18"/>
+<itemref idref="ch19"/>
+<itemref idref="ch20"/>
+<itemref idref="ch21"/>
+<itemref idref="ch22"/>
+<itemref idref="ch23"/>
+<itemref idref="ch24"/>
+<itemref idref="ch25"/>
+<itemref idref="ch26"/>
+<itemref idref="ch27"/>
+<itemref idref="ch28"/>
+<itemref idref="ch29"/>
+<itemref idref="ch30"/>
+<itemref idref="ch31"/>
+<itemref idref="ch32"/>
+<itemref idref="ch33"/>
+<itemref idref="ch34"/>
+<itemref idref="doc1"/>
+<itemref idref="doc2"/>
+<itemref idref="doc3"/>
+<itemref idref="doc4"/>
+<itemref idref="doc5"/>
+<itemref idref="doc6"/>
+<itemref idref="doc7"/>
+<itemref idref="doc8"/>
+<itemref idref="doc9"/>
+<itemref idref="about"/>
+</spine>
+</package>
