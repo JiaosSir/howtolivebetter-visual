@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import { ThemeProvider } from './components/ThemeContext';
 
@@ -26,7 +26,7 @@ export default function App() {
         <Layout>
           <Suspense fallback={<LoadingFallback />}>
             <Routes>
-              <Route path="/" element={<HomePage />} />
+              <Route path="/" element={<Navigate to="/preface" replace />} />
               <Route path="/preface" element={<PrefacePage />} />
               <Route path="/chapter/:chapterId" element={<ChapterPage />} />
               <Route path="/doc/:docId" element={<DocPage />} />
