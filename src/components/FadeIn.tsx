@@ -12,9 +12,9 @@ interface FadeInProps {
 export default function FadeIn({
   children,
   delay = 0,
-  duration = 600,
+  duration = 200,
   direction = 'up',
-  threshold = 0.1,
+  threshold = 0,
   className = '',
 }: FadeInProps) {
   const ref = useRef<HTMLDivElement>(null);

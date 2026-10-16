@@ -1,7 +1,17 @@
-import { useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 export default function ReadingProgressBar() {
   const [progress, setProgress] = useState(0);
+  const { pathname } = useLocation();
+  const prevPathname = useRef(pathname);
+
+  useEffect(() => {
+    if (prevPathname.current === pathname) return;
+    prevPathname.current = pathname;
+    window.scrollTo(0, 0);
+    setProgress(0);
+  }, [pathname]);
 
   useEffect(() => {
     function updateProgress() {
