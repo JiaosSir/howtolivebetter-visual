@@ -1,5 +1,5 @@
-import { useState, useMemo } from 'react';
-import { useParams, Link, Navigate } from 'react-router-dom';
+import { useState, useMemo, useEffect } from 'react';
+import { useParams, useLocation, Link, Navigate } from 'react-router-dom';
 import chaptersData from '../data/chapters.json';
 import type { Chapter, EvidenceLevel } from '../types';
 import ItemCard from '../components/ItemCard';
@@ -12,8 +12,46 @@ const chapters = chaptersData as Chapter[];
 
 export default function ChapterPage() {
   const { chapterId } = useParams<{ chapterId: string }>();
+  const { hash, state, key: locationKey } = useLocation();
   const chapter = chapters.find((ch) => ch.id === chapterId);
   const [filter, setFilter] = useState<FilterValue>('all');
+  const anchorId = hash.replace(/^#/, '');
+  const searchTerms = (state as { searchTerms?: string[] } | null)?.searchTerms;
+  const [highlightedId, setHighlightedId] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!anchorId) {
+      setHighlightedId(null);
+      return;
+    }
+
+    setFilter('all');
+    let cancelled = false;
+
+    const scrollTimer = window.setTimeout(() => {
+      if (cancelled) return;
+      const target = document.getElementById(anchorId);
+      if (!target) return;
+
+      // Expanding the matched card changes layout, so scroll on the next frame.
+      setHighlightedId(anchorId);
+      window.requestAnimationFrame(() => {
+        if (cancelled) return;
+        const reduceMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches;
+        target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
+      });
+    }, 120);
+
+    const clearTimer = window.setTimeout(() => {
+      if (!cancelled) setHighlightedId(null);
+    }, 2800);
+
+    return () => {
+      cancelled = true;
+      window.clearTimeout(scrollTimer);
+      window.clearTimeout(clearTimer);
+    };
+  }, [anchorId, locationKey]);
 
   if (!chapter) {
     return <Navigate to="/" replace />;
@@ -76,7 +114,11 @@ export default function ChapterPage() {
             delay={Math.min(index * 50, 300)}
             direction="up"
           >
-            <ItemCard item={item} />
+            <ItemCard
+              item={item}
+              highlighted={highlightedId === `item-${item.id}`}
+              searchTerms={highlightedId === `item-${item.id}` ? searchTerms : undefined}
+            />
           </FadeIn>
         ))}
       </div>

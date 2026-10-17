@@ -1,6 +1,7 @@
 import { useState, type ReactNode } from 'react';
 import Sidebar from './Sidebar';
 import ReadingProgressBar from './ReadingProgressBar';
+import SearchDialog from './SearchDialog';
 import ThemeToggle from './ThemeToggle';
 
 interface LayoutProps {
@@ -33,6 +34,7 @@ export default function Layout({ children }: LayoutProps) {
             </h1>
 
             <div className="flex items-center gap-2">
+              <SearchDialog />
               <ThemeToggle />
               <div className="w-9 lg:hidden" />
             </div>

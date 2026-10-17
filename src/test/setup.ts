@@ -50,3 +50,7 @@ window.requestAnimationFrame = ((cb: FrameRequestCallback) => {
 }) as typeof requestAnimationFrame;
 
 window.cancelAnimationFrame = (() => {}) as typeof cancelAnimationFrame;
+
+if (!Element.prototype.scrollIntoView) {
+  Element.prototype.scrollIntoView = () => {};
+}

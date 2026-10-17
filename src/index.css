@@ -102,3 +102,21 @@ h1, h2, h3, h4, h5, h6 {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Keyword flash after jumping from a search result */
+@keyframes keyword-flash {
+  0% { background-color: color-mix(in srgb, var(--color-accent) 32%, transparent); }
+  20% { background-color: color-mix(in srgb, var(--color-accent) 10%, transparent); }
+  40% { background-color: color-mix(in srgb, var(--color-accent) 32%, transparent); }
+  60% { background-color: color-mix(in srgb, var(--color-accent) 10%, transparent); }
+  80% { background-color: color-mix(in srgb, var(--color-accent) 32%, transparent); }
+  100% { background-color: transparent; }
+}
+
+.search-keyword-flash {
+  color: var(--color-accent);
+  background-color: transparent;
+  border-radius: 3px;
+  padding: 0 1px;
+  animation: keyword-flash 2.2s ease-in-out forwards;
+}
