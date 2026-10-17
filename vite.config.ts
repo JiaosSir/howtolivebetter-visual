@@ -4,7 +4,9 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/howtolivebetter-visual/',
+  // Relative base keeps assets working both at the domain root (Qoder Sites)
+  // and under the /howtolivebetter-visual/ subpath (GitHub Pages).
+  base: './',
   resolve: {
     alias: {
       '@': '/src',
