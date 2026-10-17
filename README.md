@@ -4,7 +4,10 @@
 
 [在线浏览](https://jiaossir.github.io/howtolivebetter-visual/) · [功能特性](#功能特性) · [本地运行](#本地运行) · [技术栈](#技术栈)
 
-[![首页预览](docs/preview.png)](https://jiaossir.github.io/howtolivebetter-visual/)
+<p align="center">
+  <a href="https://jiaossir.github.io/howtolivebetter-visual/"><img src="docs/preview.png" alt="桌面端预览" width="700" /></a>
+  <a href="https://jiaossir.github.io/howtolivebetter-visual/"><img src="docs/preview-mobile.png" alt="移动端预览" width="220" /></a>
+</p>
 
 ---
 
